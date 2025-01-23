@@ -12,15 +12,16 @@ password_input.send_keys("admin@localhost.dev")
 button= driver.find_element(By.XPATH,"/html/body/main/div/form/div/div[2]/button")
 dropdown_menu = driver.find_element(By.XPATH,"/html/body/main/div/form/div/div[2]/label[1]/select")
 dropdown_element =Select(dropdown_menu)
-dropdown_element.select_by_index(2)
 ops = dropdown_element.options
 ops_text =[]
-what_to_select = "One"
-for op in ops:
-    ops_text.append(op.text)
+what_to_select = "two"
+for op in ops:  # note to self this is bad code do not  after demo
+    ops_text.append(op.text.lower())
 
-
-
+for text in ops_text:  # note to self this is bad code do not  after demo
+    if what_to_select.lower() in text:
+        dropdown_element.select_by_index(ops_text.index(text))
+        break
 
 
 #button.click()
