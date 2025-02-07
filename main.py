@@ -25,7 +25,7 @@ def s4(what_to_select):
             break
 
 
-login_s1(231014333,151431)
+login_s1(123,13)
 s2()
 s3()
 #s4()
