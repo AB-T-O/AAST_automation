@@ -18,11 +18,11 @@ def s3():
 
 login_s1(231014333,151431)
 s2()
-s3()
-###dropdown_menu = driver.find_element(By.XPATH,"/html/body/main/div/form/div/div[2]/label[1]/select")
-#dropdown_element =Select(dropdown_menu)
+s3()#lock out of doing more 
+#dropdown_menu = driver.find_element(By.XPATH,"/html/body/main/div/form/div/div[2]/label[1]/select") 
+#dropdown_element =Select(dropdown_menu)                                                             
 #ops = dropdown_element.options
-#ops_text =[]
+#ops_text =[]                                                                                     
 #what_to_select = "two"
 #for op in ops:  # note to self this is bad code do not  after demo
     #ops_text.append(op.text.lower())
@@ -31,7 +31,3 @@ s3()
     #if what_to_select.lower() in text:
         #dropdown_element.select_by_index(ops_text.index(text))
         #break
-
-
-#button.click()
-###ctl00_ContentPlaceHolder1_UserName
