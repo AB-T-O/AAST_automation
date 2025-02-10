@@ -1,5 +1,8 @@
+import time
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support import wait
 from selenium.webdriver.support.select import Select
 
 driver = webdriver.Firefox()
@@ -12,22 +15,31 @@ def s2():
     driver.find_element(By.XPATH,"//*[@id=\"ctl00_ContentPlaceHolder1_lmajor\"]").click()
 def s3():
     driver.find_element(By.XPATH,"// *[ @ id = \"ctl00_ContentPlaceHolder1_Lbtn_Reg\"]").click()
-def s4(what_to_select):
-     dropdown_menu = driver.find_element(By.XPATH,"/html/body/main/div/form/div/div[2]/label[1]/select")
-     dropdown_element =Select(dropdown_menu)
-     ops = dropdown_element.options
-     ops_text =[]
-     for op in ops:
-        ops_text.append(op.text.lower())
-     for text in ops_text:
-         if what_to_select.lower() in text:
-            dropdown_element.select_by_index(ops_text.index(text))
-            break
+
+def s_temp():
+    driver.find_element(By.XPATH,"//*[@id=\"ctl00_ContentPlaceHolder1_lbtn_changeReg\"]").click()
 
 
-login_s1(231014333,151431)
+def s5(what_to_select):
+    xpaths = {"//*[@id=\"ctl00_ContentPlaceHolder1_grdvw_courses_ctl02_drp_cls\"]","//*[@id=\"ctl00_ContentPlaceHolder1_grdvw_courses_ctl03_drp_cls\"]","//*[@id=\"ctl00_ContentPlaceHolder1_grdvw_courses_ctl04_drp_cls\"]","//*[@id=\"ctl00_ContentPlaceHolder1_grdvw_courses_ctl05_drp_cls\"]","//*[@id=\"ctl00_ContentPlaceHolder1_grdvw_courses_ctl06_drp_cls\"]","//*[@id=\"ctl00_ContentPlaceHolder1_grdvw_courses_ctl07_drp_cls\"]"}
+    for xp in xpaths :
+         dropdown_menu = driver.find_element(By.XPATH,xp)
+         dropdown_element =Select(dropdown_menu)
+         ops = dropdown_element.options
+         ops_text =[]
+         for op in ops:
+            ops_text.append(op.text.lower())
+         for text in ops_text:
+             if what_to_select.lower() in text:
+                dropdown_element.select_by_index(ops_text.index(text))
+                break
+         time.sleep(2)
+
+login_s1(231014333,151431)#enter your di and pin cod
 s2()
 s3()
-#s4()
+s_temp()
+time.sleep(2)
+s5("4cs7")
 
 
