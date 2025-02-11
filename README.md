@@ -1,5 +1,5 @@
 ﻿# AAST_automation
-  A Tool for automating the registration process by Yahia  and abdalrahman
+  A Tool for automating the AAST wepsite registration process by Yahia  and abdalrahman
 
 
 
