@@ -17,13 +17,24 @@ def login_s1(ID, pincod):
      driver.find_element(By.XPATH,"//*[@id=\"ctl00_ContentPlaceHolder1_Password\"]").send_keys(pincod)
      driver.find_element(By.XPATH,"//*[@id=\"ctl00_ContentPlaceHolder1_btn_login\"]").click()
 def s2():
-    driver.find_element(By.XPATH,"//*[@id=\"ctl00_ContentPlaceHolder1_lmajor\"]").click()
+    try:
+        driver.find_element(By.XPATH,"//*[@id=\"ctl00_ContentPlaceHolder1_lmajor\"]").click()
+    except:
+        print("S2 problem")
 def s3():
     driver.find_element(By.XPATH,"// *[ @ id = \"ctl00_ContentPlaceHolder1_Lbtn_Reg\"]").click()
 
+def s_testing():
+    print("you are in testing mode")
+    driver.find_element(By.XPATH, "//*[@id=\"ctl00_ContentPlaceHolder1_lbtn_changeReg\"]").click()
 def s4():
-    driver.find_element(By.XPATH,"//*[@id=\"ctl00_ContentPlaceHolder1_lbtn_changeReg\"]").click()
-
+    print("you are in normal mode")
+    while True :
+        try:
+            driver.find_element(By.XPATH,"//*[@id=\"ctl00_ContentPlaceHolder1_lbtn_InsertTermCourse\"]").click()
+            break
+        except:
+            continue
 def fun(xp,xpaths,what_to_select):
     try:
         dropdown_menu = driver.find_element(By.XPATH,xp)
@@ -50,6 +61,7 @@ def s5(what_to_select):
 login_s1(id,pid)#enter your di and pin cod
 s2()
 s3()
-s4() 
+#s4() # used for normal use does not work for testing
+s_testing() #used for testing do not use for normal use
 s5(cs)
 #:)

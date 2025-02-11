@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fe46ae2-4d65-400b-8a79-1e7b28b33ab6" name="Changes" comment="69_420_21">
+    <list default="true" id="7fe46ae2-4d65-400b-8a79-1e7b28b33ab6" name="Changes" comment="1234">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -13,6 +13,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="MIXED" />
@@ -134,7 +135,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739220733953</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="69_420_21">
+      <option name="closed" value="true" />
+      <created>1739228349401</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1739228349401</updated>
+    </task>
+    <task id="LOCAL-00013" summary="1234">
+      <option name="closed" value="true" />
+      <created>1739228679557</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1739228679557</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,6 +186,8 @@
     <MESSAGE value="good_2" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;main.py" />
     <MESSAGE value="69_420_21" />
-    <option name="LAST_COMMIT_MESSAGE" value="69_420_21" />
+    <MESSAGE value="all good 420_69" />
+    <MESSAGE value="1234" />
+    <option name="LAST_COMMIT_MESSAGE" value="1234" />
   </component>
 </project>
