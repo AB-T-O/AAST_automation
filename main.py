@@ -34,6 +34,7 @@ def s4():
             driver.find_element(By.XPATH,"//*[@id=\"ctl00_ContentPlaceHolder1_lbtn_InsertTermCourse\"]").click()
             break
         except:
+            s3()
             continue
 def fun(xp,xpaths,what_to_select):
     try:
