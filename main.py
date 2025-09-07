@@ -7,11 +7,8 @@ from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-id=int(input("Enter ID: "))
-pid=input("Enter PIN: ")
-cs=input("Enter cs: ")
-driver = webdriver.Firefox()
-driver.get("https://alexreg.aast.edu/aastreg/frm_login.aspx")#https://www.selenium.dev/selenium/web/web-form.html
+
+
 def login_s1(ID, pincod):
      driver.find_element(By.XPATH,"//*[@id=\"ctl00_ContentPlaceHolder1_UserName\"]").send_keys(ID)
      driver.find_element(By.XPATH,"//*[@id=\"ctl00_ContentPlaceHolder1_Password\"]").send_keys(pincod)
@@ -59,10 +56,16 @@ def s5(what_to_select):
          while True:
              if fun(xp,xpaths,what_to_select):
                  break
-login_s1(id,pid)#enter your di and pin cod
-s2()
-s3()
-#s4() # used for normal use does not work for testing
-s_testing() #used for testing do not use for normal use
-s5(cs)
-#:)
+if __name__ == "__main__":
+    id = int(input("Enter ID: "))
+    pid = input("Enter PIN: ")
+    cs = input("Enter cs: ")
+    driver = webdriver.Firefox()
+    driver.get("https://cairoreg.aast.edu/aastreg/frm_Register.aspx")  # https://www.selenium.dev/selenium/web/web-form.html
+    login_s1(id,pid)#enter your di and pin cod
+    s2()
+    s3()
+    s4() # used for normal use does not work for testing
+    #s_testing() #used for testing do not use for normal use
+    s5(cs)
+    #:)
